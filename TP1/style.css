@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gochi Hand';
+    background: #c7ecee;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+canvas{
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
