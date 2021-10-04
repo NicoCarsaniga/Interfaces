@@ -95,13 +95,14 @@ function drawRect(imageData4, r, g, b, a) {
     }
 }
 
-function setPixel(imageData4, x, y, r, g, b, a) {
-    let index = (x + y * imageData4.width) * 4;
-    imageData4.data[index] = r;
-    imageData4.data[index + 1] = g;
-    imageData4.data[index + 2] = b;
+function setPixel(imageData, x, y, r, g, b, a) {
+    let index = (x + y * imageData.width) * 4;
+    imageData.data[index] = r;
+    imageData.data[index + 1] = g;
+    imageData.data[index + 2] = b;
     imageData4.data[index + 3] = a;
 }
 
 drawRect(imageData4, r, g, b, a);
 ctx4.putImageData(imageData4, 0, 0);
+
